@@ -1,5 +1,4 @@
 
-
 public class Crawler {
     private String URL;
     private static int maxDepth;
@@ -22,7 +21,7 @@ public class Crawler {
     }
 
     public static void main(String[] args){
-        Crawler crawler = new Crawler("https://javarush.ru",2 ,10);
+        Crawler crawler = new Crawler("https://lms.mtuci.ru/lms/my/",2 ,10);
         crawler.run();
 
         Runtime.getRuntime().addShutdownHook(new Thread(()->printResult()));
